@@ -22,10 +22,15 @@ function Home() {
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> SID EL MRABET MALEK AYA</strong>
-              </h1>
-              <h2 className="heading-subtitle">
+                <br></br>
+                 <h3 className="heading-subtitle">
                   Full-Stack Developer | AI Engineer
-              </h2>
+                  
+              </h3>
+                
+
+              </h1>
+             
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
