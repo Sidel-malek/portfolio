@@ -11,7 +11,6 @@ import {
 } from "react-icons/di";
 import {
   SiPytorch,
-  SiTensorflow,
   SiScikitlearn,
   SiApachekafka,
   SiRedis
@@ -26,7 +25,6 @@ import {
   SiApachespark,
   SiApachehadoop,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   const technologies = [
