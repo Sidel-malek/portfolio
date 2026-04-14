@@ -6,7 +6,7 @@ import dietsystem from "../../Assets/Projects/dietsystem.png";
 import daresni from "../../Assets/Projects/daresni.png";
 import swapbook from "../../Assets/Projects/swapbook.jpg";
 import sv from "../../Assets/Projects/sv.png";
-import neurevia from "../../Assets/Projects/neurevia.png";
+import neurevia from "../../Assets/Projects/neurevia.PNG";
 
 function Projects() {
   return (
