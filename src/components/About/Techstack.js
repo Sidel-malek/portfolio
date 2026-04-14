@@ -12,6 +12,13 @@ import {
   DiAngularSimple,
 } from "react-icons/di";
 import {
+  SiPytorch,
+  SiTensorflow,
+  SiScikitlearn,
+  SiApachekafka,
+  SiRedis
+} from "react-icons/si";
+import {
   SiMysql,
   SiNextdotjs,
   SiPostgresql,
@@ -41,6 +48,10 @@ function Techstack() {
     { icon: <DiGit />, name: "Git" },
     { icon: <SiApachespark />, name: "Apache Spark" },
     { icon: <SiApachehadoop />, name: "Apache Hadoop" },
+    { icon: <SiPytorch />, name: "PyTorch" },
+    { icon: <SiScikitlearn />, name: "Scikit-learn" },
+    { icon: <SiApachekafka />, name: "Kafka" },
+    { icon: <SiRedis />, name: "Redis" },
   ];
 
   return (

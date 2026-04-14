@@ -19,20 +19,23 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am passionate about programming and creating innovative solutions  💡.
-              <br />
-              <br />
-              I specialize in web development using frameworks like <b className="purple">Angular</b>,&nbsp;  <b className="purple">Next.js</b>,&nbsp; and <b className="purple">Spring Boot</b>,
-              with a growing interest in <b className="purple"> data analysis,&nbsp; machine learning, &nbsp;and AI </b> .
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Python,&nbsp; Java,&nbsp; Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              <br />
-              Let’s build something amazing together! 🚀
+                 I am a Computer Science Engineer specialized in <b className="purple">Full-Stack Development</b> and <b className="purple">Artificial Intelligence</b>, with experience in building scalable web platforms and intelligent decision-support systems.
+
+                 <br /><br />
+
+                 I developed an <b className="purple">AI-based medical decision-support web platform</b> integrating multimodal machine learning models and Explainable AI techniques, alongside several full-stack applications including tutoring platforms, student project management systems, and mobile applications.
+
+                 <br /><br />
+
+                 My technical stack includes <b className="purple">Next.js, Django, Spring Boot, Microservices architecture</b>, and <b className="purple">Machine Learning & Deep Learning</b> using Python frameworks such as PyTorch and Scikit-learn.
+
+                 <br /><br />
+
+                 I enjoy designing end-to-end intelligent applications that combine backend engineering with real-world AI integration.
+
+                 <br /><br />
+
+                 Let’s build something impactful together 🚀
             </p>
           </Col>
           <Col md={4} className="myAvtar">

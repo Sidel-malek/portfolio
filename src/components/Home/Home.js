@@ -24,6 +24,9 @@ function Home() {
                 I'M
                 <strong className="main-name"> SID EL MRABET MALEK AYA</strong>
               </h1>
+              <h2 className="heading-subtitle">
+                  Full-Stack Developer | AI Engineer
+              </h2>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
