@@ -3,7 +3,6 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import dietsystem from "../../Assets/Projects/dietsystem.png";
 import daresni from "../../Assets/Projects/daresni.png";
-import swapbook from "../../Assets/Projects/swapbook.jpg";
 import sv from "../../Assets/Projects/sv.png";
 import neurevia from "../../Assets/Projects/neurevia.PNG";
 

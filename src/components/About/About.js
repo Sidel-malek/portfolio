@@ -144,12 +144,7 @@ function Divider() {
 
 // =================== PAGE ===================
 export default function AboutPage() {
-  const navLinks = [
-    { label: "Home", href: "/", icon: "🏠" },
-    { label: "About", href: "/about", icon: "👤" },
-    { label: "Projects", href: "/projects", icon: "🖥" },
-    { label: "Resume", href: "/resume", icon: "📄" },
-  ];
+
 
   const interests = [
     { icon: "⚙️", title: "Backend Engineering", desc: "Building robust, scalable server architectures with Django, FastAPI, and microservices patterns." },
@@ -164,12 +159,7 @@ export default function AboutPage() {
     { value: "5", suffix: "+", label: "AI Models Integrated" },
   ];
 
-  const goals = [
-    "Architect large-scale AI-powered platforms",
-    "Bridge software engineering and clinical AI",
-    "Contribute to open-source distributed systems",
-    "Lead intelligent healthcare decision tools",
-  ];
+  
 
   const techCategories = [
     {
