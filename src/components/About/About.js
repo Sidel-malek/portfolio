@@ -155,7 +155,7 @@ export default function AboutPage() {
 
   const stats = [
     { value: "3", suffix: "+", label: "Years Building" },
-    { value: "10", suffix: "+", label: "Projects Shipped" },
+    { value: "10", suffix: "+", label: "Systems Developed" },
     { value: "5", suffix: "+", label: "AI Models Integrated" },
   ];
 
