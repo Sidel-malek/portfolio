@@ -1,102 +1,115 @@
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
-import Tilt from "react-parallax-tilt";
+
 import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
+
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container
+      fluid
+      className="home-about-section"
+      id="about"
+    >
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
 
-            <p className="home-about-body">
-  I am a Computer Science Engineer specialized in{" "}
-  <b className="purple">Full-Stack Development</b> and{" "}
-  <b className="purple">Artificial Intelligence</b>.
+        <div className="about-glass-card">
 
-  <br /><br />
+          <Row className="align-items-center">
 
-  I developed an{" "}
-  <b className="purple">
-    AI-based medical decision-support web platform
-  </b>{" "}
-  integrating multimodal machine learning models and Explainable AI techniques.
+            {/* LEFT SIDE */}
+            <Col
+              lg={8}
+              className="home-about-description"
+            >
 
-  <br /><br />
+              <p className="section-label">
+                LET ME INTRODUCE MYSELF
+              </p>
 
-  I also design scalable web platforms using{" "}
-  <b className="purple">
-    Django, Next.js, Spring Boot, and Microservices architecture
-  </b>.
+              <h1 className="about-title">
+                Building intelligent systems
+                and scalable web platforms.
+              </h1>
 
-  <br /><br />
+              <p className="home-about-body">
 
-  I enjoy building intelligent systems that connect software engineering with real-world AI applications 🚀
-</p>
-          </Col>
+                I am a Computer Science Engineer specialized in{" "}
+                <span className="purple">
+                  Full-Stack Development
+                </span>{" "}
+                and{" "}
+                <span className="purple">
+                  Artificial Intelligence
+                </span>.
 
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img
-                src={myImg}
-                className="img-fluid avatar"
-                alt="avatar"
-              />
-            </Tilt>
-          </Col>
-        </Row>
+                <br /><br />
 
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect</span> with me
-            </p>
+                My work focuses on designing modern web
+                applications, distributed systems,
+                and AI-powered platforms using scalable
+                backend architectures and machine learning.
 
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/sidel-malek"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
+                <br /><br />
 
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/malek-sid-el-mrabet-520909222/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
+                I enjoy building intelligent systems that connect software engineering with real-world AI applications 🚀
 
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/sidel_malek/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+ 
+              
+
+                <br /><br />
+
+                Main technologies:
+              </p>
+
+              {/* TECH STACK */}
+              <div className="tech-stack">
+
+                <span>Django</span>
+                <span>Next.js</span>
+                <span>Spring Boot</span>
+                <span>Kafka</span>
+                <span>React</span>
+                <span>Machine Learning</span>
+                <span>Microservices</span>
+
+              </div>
+
+            </Col>
+
+            {/* RIGHT SIDE */}
+            <Col
+              lg={4}
+              className="about-right-side"
+            >
+
+              <div className="stats-card">
+
+                <div className="stat-item">
+                  <h2>5+</h2>
+                  <p>Projects Built</p>
+                </div>
+
+                <div className="stat-item">
+                  <h2>AI</h2>
+                  <p>Machine Learning Systems</p>
+                </div>
+
+                <div className="stat-item">
+                  <h2>Full-Stack</h2>
+                  <p>Modern Web Development</p>
+                </div>
+
+              </div>
+
+            </Col>
+
+          </Row>
+
+        </div>
       </Container>
     </Container>
   );

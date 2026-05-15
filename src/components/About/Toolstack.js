@@ -1,4 +1,6 @@
-import { Col, Row } from "react-bootstrap";
+import React from "react";
+import { Row, Col } from "react-bootstrap";
+
 import {
   SiVisualstudiocode,
   SiPostman,
@@ -10,31 +12,92 @@ import {
 } from "react-icons/si";
 
 function Toolstack() {
+
   const tools = [
-    { icon: <SiVisualstudiocode />, name: "Visual Studio Code" },
-    { icon: <SiDocker />, name: "Docker" },
-    { icon: <SiPostman />, name: "Postman" },
-    { icon: <SiApachemaven />, name: "Apache Maven" },
-    { icon: <SiIntellijidea />, name: "IntelliJ IDEA" },
-    { icon: <SiGithub />, name: "GitHub" },
-    { icon: <SiTrello />, name: "Trello" },
+
+    {
+      icon: <SiVisualstudiocode />,
+      name: "VS Code",
+    },
+
+    {
+      icon: <SiDocker />,
+      name: "Docker",
+    },
+
+    {
+      icon: <SiPostman />,
+      name: "Postman",
+    },
+
+    {
+      icon: <SiApachemaven />,
+      name: "Maven",
+    },
+
+    {
+      icon: <SiIntellijidea />,
+      name: "IntelliJ IDEA",
+    },
+
+    {
+      icon: <SiGithub />,
+      name: "GitHub",
+    },
+
+    {
+      icon: <SiTrello />,
+      name: "Trello",
+    },
+
   ];
 
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {tools.map((tool, index) => (
-        <Col
-          key={index}
-          xs={4}
-          md={2}
-          className="tech-icons"
-          title={tool.name} // Affiche un tooltip natif au survol
-          style={{ textAlign: "center" }} // Centrage des icônes
-        >
-          {tool.icon}
-        </Col>
-      ))}
-    </Row>
+
+    <div className="toolstack-wrapper">
+
+      <Row className="justify-content-center">
+
+        {tools.map((tool, index) => (
+
+          <Col
+            key={index}
+            xs={6}
+            sm={4}
+            md={3}
+            lg={2}
+            className="mb-4"
+          >
+
+            <div
+              className="tool-card"
+              title={tool.name}
+            >
+
+              {/* ICON */}
+              <div className="tool-icon">
+
+                {tool.icon}
+
+              </div>
+
+              {/* NAME */}
+              <p className="tool-name">
+
+                {tool.name}
+
+              </p>
+
+            </div>
+
+          </Col>
+
+        ))}
+
+      </Row>
+
+    </div>
+
   );
 }
 

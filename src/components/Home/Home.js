@@ -1,54 +1,86 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import { Link } from "react-router-dom";
+
+import homeLogo from "../../Assets/about.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
+import Contact from "./Contact"
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
+    <section className="home-section">
+      <Container fluid  id="home">
         <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SID EL MRABET MALEK AYA</strong>
-                <br></br>
-                 <h3 className="heading-subtitle">
-                  Full-Stack Developer | AI Engineer
+        <Container className="home-content">
+          <Row className="align-items-center">
+
+            {/* LEFT SIDE */}
+            <Col md={7} className="home-header">
+
+              <div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+
+                <p className="hero-greeting">
+                  Full-Stack Developer & AI Engineer
+                </p>
+
+                <h1 className="hero-title">
+                 SID EL MRABET <br/>
+                 Malek Aya
+                </h1>
+
+                <p className="hero-description">
+                  I build scalable web platforms, distributed systems,
+                  and intelligent AI-powered applications using modern
+                  full-stack technologies and machine learning.
+                </p>
+
+                {/* CTA BUTTONS */}
+                <div className="hero-buttons">
+
+                  <Link
+                    to="/project"
+                    className="hero-btn primary-btn"
+                  >
+                    View Projects
+                  </Link>
                   
-              </h3>
+                  <HashLink smooth to="/#contact"  className="hero-btn secondary-btn">
+                    Contact Me
+                  </HashLink>
                 
 
-              </h1>
-             
+                </div>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
               </div>
+
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            {/* RIGHT SIDE */}
+            <Col md={5} className="hero-image-container">
+
               <img
                 src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                alt="hero"
+                className="img-fluid hero-image"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
               />
+
             </Col>
+
           </Row>
         </Container>
       </Container>
+
       <Home2 />
+      <Contact/>
     </section>
   );
 }
