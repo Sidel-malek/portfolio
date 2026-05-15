@@ -3,7 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link, useLocation } from "react-router-dom";
-
 import logo from "../Assets/logo.png";
 
 import {
@@ -43,20 +42,22 @@ function NavBar() {
       expand="md"
       className={navColour ? "navbar-scrolled" : "navbar-custom"}
     >
-      <Container>
-        {/* Logo */}
-        <Navbar.Brand
+      <Container className="navbar-wrapper" >
+            {/* Logo */}
+         <Navbar.Brand
           as={Link}
           to="/"
           className="navbar-logo"
           onClick={closeMenu}
-        >
+         >
           <img
             src={logo}
             className="logo-img"
             alt="logo"
           />
-        </Navbar.Brand>
+         </Navbar.Brand>
+
+      
 
         {/* Mobile Toggle */}
         <Navbar.Toggle
